@@ -1,0 +1,38 @@
+
+
+.mainBox{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 100px;
+    align-items: center;
+}
+
+.textContainer{
+    display: flex;flex-direction: column;
+}
+
+.profile{
+ display: flex;
+ align-items: center;
+ gap:30px
+
+}
+
+.profileImg{
+    border-radius: 40px;
+}
+
+.firstModule{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.textContainer{
+ margin-top: 30px;
+}
