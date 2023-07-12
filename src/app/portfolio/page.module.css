@@ -39,12 +39,12 @@ font-weight: 500;
 }
 
 .text:hover{
-    color:#53c28b;
+    color:#006FCD;
 }
 
 .item{
     display: flex; 
-    gap: 450px;
+    gap: 100px;
     /* justify-content: space-between; */
     margin-top: 50px;
     margin-bottom: 100px;
@@ -67,3 +67,7 @@ font-weight: 500;
     gap: 20px;
     justify-content: center;
 }    
+
+.textTitle{
+    font-size: 50px;
+}

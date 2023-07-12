@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import illustration from "/public/illustration.png";
-import electronics from "/public/websites.jpg";
-import apps from "/public/apps.jpg";
+import spiderman from "/public/spiderman.jpg";
+// import electronics from "/public/websites.jpg";
+import electronics from "/public/controller2.png";
+import apps from "/public/Esports.jpg";
 import Link from "next/link";
 
 const Portfolio = () => {
@@ -11,27 +13,27 @@ const Portfolio = () => {
     <div className={styles.container}>
       <div className={styles.shortTitle}>choose a gallery</div>
       <div className={styles.gallery}>
-        <Link href="/portfolio/illustrations" className={styles.box}>
+        <Link href="/portfolio/games" className={styles.box}>
           <Image
-            src={illustration}
+            src={spiderman}
             width={300}
             height={450}
             className={styles.img}
           />
-          <h1 className={styles.text}>Illustrations</h1>
+          <h1 className={styles.text}>Games</h1>
         </Link>
-        <Link href="/portfolio/websites" className={styles.box}>
+        <Link href="/portfolio/gadgets" className={styles.box}>
           <Image
             src={electronics}
             width={300}
             height={450}
             className={styles.img}
           />
-          <h1 className={styles.text}>Websites</h1>
+          <h1 className={styles.text}>Gadgets</h1>
         </Link>
-        <Link href="/portfolio/apps" className={styles.box}>
+        <Link href="/portfolio/events" className={styles.box}>
           <Image src={apps} width={300} height={450} className={styles.img} />
-          <h1 className={styles.text}>Applications</h1>
+          <h1 className={styles.text}>Esports</h1>
         </Link>
       </div>
     </div>

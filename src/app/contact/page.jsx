@@ -4,6 +4,7 @@ import React, { useContext } from 'react'
 import styles from './page.module.css';
 import Image from 'next/image';
 import contactImg from '/public/contact.png'
+import contactImg1 from '/public/contact1.png'
 import Button from '@/components/Button/Button';
 import { ThemeContext } from '@/context/ThemeContext';
 
@@ -17,7 +18,7 @@ const Contact = () => {
           <h1>Let's Keep In Touch</h1>
         </div>
         <div className={styles.content}>
-          <Image src={contactImg} width={500} height={500} className={styles.img}  />
+          <Image src={contactImg1} width={500} height={500} className={styles.img}  />
           <form className={styles.form}>
             <input type="text" placeholder='Name' className={mode === "dark" ? styles.input :styles.darkInput} />
             <input type="text" placeholder='Email' className={mode === "dark" ? styles.input :styles.darkInput} />
