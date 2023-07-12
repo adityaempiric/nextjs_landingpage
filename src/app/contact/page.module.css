@@ -33,12 +33,24 @@
     background-color: #111111;
     color: white;
 }
+.darkInput{
+    padding: 20px;
+    border: 1px solid #111;
+    background-color: white;
+    color: #111;
+}
 
 .textarea{
     padding: 20px;
     border: 1px solid #fff;
     background-color: #111111;
     color: white;
+}
+.darkTextarea{
+    padding: 20px;
+    border: 1px solid #111;
+    background-color: white;
+    color: #111;
 }
 
 .img{
