@@ -71,3 +71,178 @@ font-weight: 500;
 .textTitle{
     font-size: 50px;
 }
+
+
+/* for pdocut section  */
+
+.prodContainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.mainBox{
+    height: 300px;
+    width: 250px;
+    border: 1px solid #bbb;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prodBtn{
+    bottom :0;
+    height: 40px;
+    width: 250px;
+    background-color: #111111 ;
+    border: 1px solid #bbb;
+    border-radius: 0%;
+    margin-top: 5px;
+    color:#bbb;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.prodBtn:hover{
+    background-color: white;
+    color:#111111;
+    transition: all .8s ease;
+}
+
+.prodImg{
+    position: absolute;
+    object-fit: contain;
+    
+ 
+}
+
+.prodBtnDark{
+    bottom :0;
+    height: 40px;
+    width: 250px;
+    background-color: white ;
+    border: 1px solid #bbb;
+    border-radius: 0%;
+    margin-top: 5px;
+    color:#111111;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.prodBtnDark:hover{
+    background-color: #006fcd !important;
+    color:white;
+    transition: all .4s ease;
+}
+
+.darkTitle{
+    font-size: 100px;
+    font-weight: bold;
+    background:linear-gradient(to bottom,#006FCD,#bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.eventContainer{
+    display: flex;
+    margin-bottom: 100px;
+
+}
+
+
+.eventText{
+    font-size: 70px;
+}
+
+.eventVideo{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+ 
+}
+
+
+
+
+.eventBooking{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: #111111;
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+}
+
+.eventlocation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+    font-size: 20px;
+    border-right: 1px solid #bbb;
+}
+
+.eventInput{
+  border:none ;
+  height: 50px;
+   padding: 5px;
+   background-color: #111111;
+   color: #bbb;
+   font-size: 20px;
+}
+
+.calendarInput{
+    border:none ;
+    height: 50px;
+     padding: 5px;
+     background-color: #111111;
+     color: #bbb;
+     font-size: 20
+}
+
+.calendarInput::placeholder{
+    font-size: 20px;
+    color: #bbb;
+}
+
+.eventInput::placeholder{
+    
+    font-size: 20px;
+    color: #bbb;
+}
+
+.eventInput:focus-visible{
+    border: 1px solid #bbb;
+}
+
+.eventPrices{
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-right: 1px solid #bbb;
+    width: 350px;
+    cursor: pointer;
+}
+
+.eventBtn{
+    /* padding:15px; */
+}
+
+.eventSearchBtn{
+    margin-left: 40px;
+    padding: 10px;
+    background-color: white;
+    color: #111111;
+    width:150px ;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,12 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "../page.module.css";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const data = [
   {
     category: "games",
+    subcategory:"products",
     items: [
       {
         title: "Call of Duty",
@@ -30,6 +32,7 @@ const data = [
   },
   {
     category: "gadgets",
+    subcategory:"products",
     items: [
       {
         title: "Bluetooth Controller",
@@ -53,7 +56,8 @@ const data = [
     ],
   },
   {
-    category: "events",
+    category: "esport",
+    subcategory:"events",
     items: [
       {
         title: "Asian ESports Competition Japan",
@@ -61,32 +65,23 @@ const data = [
         img: "https://images.pexels.com/photos/5053841/pexels-photo-5053841.jpeg?auto=compress&cs=tinysrgb&w=1600",
         video: "/esports.mp4",
       },
-      {
-        title: "App 2",
-        desc: "Description of App 2",
-        img: "https://images.pexels.com/photos/218686/pexels-photo-218686.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        video: "/PS5.mp4",
-      },
-      {
-        title: "App 3",
-        desc: "Description of App 3",
-        img: "https://images.pexels.com/photos/4526429/pexels-photo-4526429.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        video: "/PS5.mp4",
-      },
     ],
   },
 ];
 
 const Category = ({ params }) => {
+
+  const {toggle, mode} = useContext(ThemeContext)
+
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleMouseEnter = () => {
-    console.log("-----playing on",isPlaying)
+   
     setIsPlaying(()=> true);
   };
 
   const handleMouseLeave = () => {
-    console.log("-------playing off",isPlaying)
+    
     setIsPlaying(()=> false);
   };
 
@@ -98,13 +93,14 @@ const Category = ({ params }) => {
 
   return (
     <div className={styles.container}>
+        <h1 className={mode =="dark"?styles.title:styles.darkTitle}>Our Work</h1>
       <h1 className={styles.cardTitle}>{params.category}</h1>
       {categoryData.items.map((item) => (
         <div key={item.title} className={styles.item}>
           <div className={styles.content}>
             <h1 className={styles.textTitle}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            <Button url={`/portfolio/${params.category}/products`} text="See More" />
+            <Button url={`/portfolio/${params.category}/${categoryData.subcategory}`} text="See More" />
           </div>
           <div className={styles.imgContainer}>
             <video

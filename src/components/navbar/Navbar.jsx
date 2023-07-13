@@ -16,6 +16,11 @@ const links =[
     url:"/portfolio",
   },
   {
+    id:2,
+    title:"Events",
+    url:"/portfolio/esport/events",
+  },
+  {
     id:3,
     title:"Blog",
     url:"/blog",
