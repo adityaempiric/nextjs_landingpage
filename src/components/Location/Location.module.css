@@ -1,0 +1,51 @@
+.mainContainer{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    margin-top: -90px;
+    border-radius:10px ;
+    display: block;
+    position: absolute;
+   
+}
+
+.mainContainerNone{
+    display: none;
+}
+
+.locationHeader{
+    padding: 15px;
+    background-color: #bbb;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    font-size:18px ;
+    gap:5px;
+}
+
+.locationList{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   
+    padding: 10px;
+    font-size: 20px;
+    overflow-y: scroll;
+    height: 340px;
+}
+    
+.locationData{
+    color: #111111;
+}
+
+.locFull{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border: none !important;
+    font-size: 18px;
+    padding: 5px;
+}
+
